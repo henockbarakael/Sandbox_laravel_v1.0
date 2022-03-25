@@ -50,7 +50,3 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
         // Route::get('/assigner/cours/destroy/{promotion_id}','App\Http\Controllers\Backend\Configuration\AssignerCoursController@destroy')->name('configurations.assigner.cours.destroy');
         // Route::get('/assigner/cours/details/{promotion_id}','App\Http\Controllers\Backend\Configuration\AssignerCoursController@details')->name('configurations.assigner.cours.details');
  //   });
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
